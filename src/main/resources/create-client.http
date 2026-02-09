@@ -1,0 +1,11 @@
+POST http://localhost:9091/clients
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@email.com",
+  "phone": "444-4444",
+  "budgetRange": "300-400k",
+  "notes": "first client"
+}
+f
