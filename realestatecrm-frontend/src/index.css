@@ -65,4 +65,69 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .page {
+  padding: 24px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.client-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.client-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.client-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-meta {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Stage badges */
+.stage-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.stage-badge.LEAD { background: #e5e7eb; color: #374151; }
+.stage-badge.PRE_APPROVED { background: #dbeafe; color: #1d4ed8; }
+.stage-badge.TOURING { background: #ede9fe; color: #6d28d9; }
+.stage-badge.UNDER_CONTRACT { background: #fef3c7; color: #92400e; }
+.stage-badge.OFFER { background: #cffafe; color: #155e75; }
+.stage-badge.CLOSED { background: #dcfce7; color: #166534; }
+
+.edit-mode .client-card {
+  border: 1px dashed #c7d2fe;
+}
+
 }
